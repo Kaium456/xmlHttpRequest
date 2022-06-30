@@ -3,7 +3,7 @@ let sendButton = document.getElementById("send-btn");
 
 let sendRequest = function (method, url, data) {
   const pormise = new Promise((resolve, rej) => {
-    let xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
     xhr.open(method, url);
     xhr.responseType = "json";
     xhr.setRequestHeader("Content-Type", "application/json");
